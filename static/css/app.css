@@ -1,8 +1,24 @@
 
 /* NavBar: Reduce the default height */
 .navbar {
-    padding-top:    0.8rem; 
-    padding-bottom: 0.8rem;
+    padding-top:    0.6rem; 
+    padding-bottom: 0.6rem;
     font-size: smaller;      
     line-height: 1em;
   }
+
+
+  /* Font Awesome icons */
+  .fa {
+      width: 40px;
+      text-align: center;
+      font-size: 40px;
+      text-decoration:none;
+  }
+
+  .fa:hover{
+      opacity: 0.8;
+  }
+
+
+

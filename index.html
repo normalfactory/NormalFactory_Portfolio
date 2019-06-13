@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Scott McEachern</title>
 
-    <!-- CSS: Bootstrap, lux -->
-    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css" rel="stylesheet" 
-        integrity="sha384-hVpXlpdRmJ+uXGwD5W6HZMnR9ENcKVRn855pPbuI/mwPIEKAuKgTKgGksVGmlAvt" crossorigin="anonymous">
+    <!-- CSS: Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- CSS: font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- CSS: Custom for site -->        
     <link rel="stylesheet" href="static/css/app.css">
@@ -16,12 +18,53 @@
     
 
     <!-- Nav Bar -->
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
         <a class="navbar-brand" href="#">
         Scott M<x class="text-lowercase">c</x>Eachern
         </a>
 
 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" 
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navbarNavDropdown" class="navbar-collapse collapse">
+            
+            <!--Ensure for buttons to be left justified-->
+            <ul class="navbar-nav mr-auto">
+            </ul>
+
+            <ul class="navbar-nav">
+            
+                <!-- Drop down list of skills -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Skills
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="vis-maxtemperature.html">Cloud</a>
+                        <a class="dropdown-item" href="vis-humidity.html">Dashboard</a>
+                        <a class="dropdown-item" href="vis-cloudiness.html">ETL</a>
+                        <a class="dropdown-item" href="vis-windspeed.html">Strategy</a>
+                        <a class="dropdown-item" href="vis-windspeed.html">Teams</a>
+                        <a class="dropdown-item" href="vis-windspeed.html">Data Science</a>
+                    </div>
+                </li>
+
+
+                <!-- Social Links -->
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://github.com/normalfactory">GitHub</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/scott-mceachern-506396133/">Linkedin</a>
+                </li>
+
+            </ul>
+        </div>
 
     </nav>
 
@@ -32,17 +75,34 @@
         <div class="row">
 
             <!-- Column: Headshot -->
-            <div class="col-4">
+            <div class="col-sm-12 col-md-4 text-center mt-4">
                 <img class="img-fluid rounded img-thumbnail" src="static/images/headshot.jpg" alt="Scott McEachern">
             </div>
 
             <!-- Column: Introduction -->
-            <div class="col-8">
+            <div class="col-sm-12 col-md-8 mt-4">
+                <p>
+                        The first time that I saw a palm tree was when I flew into San Diego from Toronto for a job interview at a small software development company.  I got the job and for the last twenty years I have been building software; from designing it on a whiteboard, writing the code, deploying the software and then maintaining it.
+                    
+                </p>
+                <p>
+                        Over those years, I have had to continue to evolve my skills by learning new technologies and platforms.  Moving from desktop, to the web, mobile devices and into the cloud.    
+                    
+                </p>
+                <p>
+                        This website highlights some of my skills and projects that I’ve had the opportunity to build.  You can contact me through my Linkedin account.
+                </p>
 
+                        <a href="#" class="fa fa-linkedin-square"></a>
+                        <a href="#" class="fa fa-github-square"></a>
             </div>
         </div>
 
     </div>
+
+
+
+    <!-- Footer -->
 
 
 
