@@ -1,3 +1,6 @@
+/* CSS for Scott McEachern profile website
+*/
+
 
 /* NavBar: Reduce the default height */
 .navbar {
@@ -6,8 +9,8 @@
   }
 
 
-  /* Font Awesome icons */
-  .fa {
+/* Font Awesome icons */
+.fa {
       width: 20px;
       text-align: center;
       font-size: 20px;
@@ -15,16 +18,16 @@
       color: white;
   }
 
-  .fa:hover{
+.fa:hover{
       opacity: 0.8;
   }
 
+
+/* Footer: Place sticky item on bottom */
 .footerfont{
     color:white;
 }
 
-
-/* Footer: Place sticky item on bottom */
 html {
     position: relative;
     min-height: 100%;
