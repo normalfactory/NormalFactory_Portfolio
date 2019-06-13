@@ -9,6 +9,11 @@
   }
 
 
+.homepageimage{
+    max-height: 175px;
+}
+
+
 /* Font Awesome icons */
 .fa {
       width: 20px;
