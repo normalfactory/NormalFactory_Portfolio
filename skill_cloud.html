@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Scott McEachern- Cloud</title>
+    <title>Scott McEachern - Cloud</title>
 
     <!-- CSS: Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -74,7 +74,80 @@
 
     <div class="container">
 
+        <!-- Introduction -->
+        <div class="row">
+
+            <div class="col-sm-12 col-md-8 mt-4">
+                <p>
+                        The <a href="https://www.crimemapping.com/" target="_blank">CrimeMapping.com</a> website allows public safety agencies provide recent crime information to the public.  
+                        The site has over 450 agencies, including <a href="https://www.crimemapping.com/map/agency/329" target="_blank" >San Diego PD</a>, 
+                        throughout North America publishing data.  The ASP.NET MVC site is deployed in Azure.
+                </p>
+                <p>
+                        The development, staging and production environments are all within Azure as different subscriptions.  
+                        This allows for the internal billing to be easily organized and makes for a great developer experience.
+                </p>
+            </div>
+
+            <div class="col-sm-12 col-md-4 mt-4">
+                <h5>Technology</h5>
+                <ul class="technologylist">
+                    <li>C#</li>
+                    <li>JavaScript</li>
+                    <li>ArcGIS JavaScript API</li>
+                    <li>Azure SQL</li>
+                    <li>Web Jobs</li>
+                    <li>Redis</li>
+                    <li>StackExchange.Redis</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- High Availablity -->
+        <div class="row mt-5">
+
+            <div class= "col-sm-12 col-md-6">
+                <h3>High Availability</h3>
+                <p>
+                        The website is deployed into two Azure data centers and there is an Azure Traffic Manager used to distribute the traffic. 
+                        The setup of the data centers is the same; there is a Web App that hosts the website, Redis for secondary caching and Azure SQL. 
+
+                </p>
+                <p>
+                        Geo-replication is enabled with Azure SQL with the West Coast data center being the master.
+
+                </p>
+            </div>
+
+            <div class="col-sm-12 col-md-6">
+                    <img class="img-fluid rounded" src="static/images/crimemapping_ha.png" alt="Azure: High Availability">
+            </div>
+        </div>
        
+
+        <!-- Automation -->
+        <div class="row mt-5">
+
+            <div class="col-sm-12 col-md-6">
+                <h3>Automation</h3>
+                <p>
+                        The public have the ability to sign up for <a href="https://www.crimemapping.com/help#create-alert" target="_blank">Alerts</a>
+                        that provide email notification when there is a new crime found within the spatial filter provided. 
+                        Every day, the Azure Scheduler calls a Web Job that gets the active alerts found within the database and then loads these alerts unique into the queue.
+                </p>
+                <p>
+                        There is a continuous Web Job running that reads the alerts from the queue and does the processing.  These Web Jobs are running in both data 
+                        centers and are configured to query the local instance of Azure SQL.  When new crime records are found, an email notification is sent.  
+                        The application is configured to use <a href="https://sendgrid.com/" target="_blank">SendGrid</a>
+                        or <a href="https://aws.amazon.com/ses/" target="_blank">AWS Simple Email Service</a> (SES).  Every month, there are 2.2 million emails sent.
+                </p>
+            </div>
+
+            <div class="col-sm-12 col-md-6 mt-5">
+                    <img class="img-fluid rounded" src="static/images/crimemapping_auto.png" alt="Azure: Automation">
+            </div>
+        </div>
 
     </div>
 
