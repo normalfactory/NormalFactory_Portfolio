@@ -74,7 +74,86 @@
 
     <div class="container">
 
+        <div class="row">
+
+            <!-- Introduction -->
+            <div class="col-sm-12 col-md-8 mt-4">
+                <p>
+                        Lead the team in building the CrimeView Dashboard application that is a multi-tenant application that provides a 
+                        geospatial view of public safety data. The application is deployed on-premise of some of the largest agencies in 
+                        the country.  Additionally, it is also deployed within AWS Gov on VMs with over 150 clients.  
+                        
+                </p>
+                <p>
+                        One of the local clients is the <a href="https://www.youtube.com/watch?v=V01ccPVXCfQ" target="_blank">San Diego Harbor Police</a>.
+                </p>
+            </div>
+
+            <!-- Technology -->
+            <div class="col-sm-12 col-md-4 mt-4">
+                <h5>Technology</h5>
+                <ul>
+                    <li>C#</li>
+                    <li>SQL Server</li>
+                    <li>Windows Communication Foundation (WCF)</li>
+                    <li>ArcGIS API for Silverlight</li>
+                    <li>ArcGIS Server</li>
+                    <li>SignalR</li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-12 col-md-8 mt-4">
+                <h3>LINQ</h3>
+                <p>
+                        One of the goals of the application was to have a highly interactive user experience. The application was 
+                        written in Silverlight and this framework included LINQ. When the user clicks map legend or charts, 
+                        the counts in all of the charts are updated as well as the map.
+
+                </p>
+                <p>
+                        I was responsible for the creation of the core mapping component that had this filtering capability build with LINQ.
+                </p>
+            </div>
+
+            <div class="col-sm-12 col-md-4 mt-4">
+                    <img class="img-fluid rounded" src="static/images/dashboard_filtering.png" alt="CrimeView: Filtering">
+            </div>
+        </div>
+
        
+        <div class="row">
+            <div class="col-sm-12 col-md-8 mt-4">
+                <h3>ArcGIS Server</h3>
+                <p>
+                        A custom Server Object Extension (SOE) for ArcGIS Server, written in C# and ArcObjects, 
+                        was used to do the geoprocessing.  The initial release used DCOM to communicate from the website 
+                        to the SOE and this was later migrated to Restful calls.
+
+                </p>
+            </div>
+
+            <div class="col-sm-12 col-md-4 mt-4">
+                    <img class="img-fluid rounded" src="static/images/dashboard_widgets2.png" alt="CrimeView: Widgets">
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-sm-12 col-md-8 mt-4">
+                    <h3>Business Intelligence</h3>
+                    <p>
+                            Beyond the CrimeView Dashboard, I have used off the shelf Business Intelligence (BI) tools.  
+                            The first BI tool was Crystal Reports where a desktop product was integrated to export data into a 
+                            database so that a report template could be pointed to the dataset.
+                    </p>
+                    <p>
+                            I have also worked with SiSense, PowerBI and Tableau.
+                    </p>
+                </div>
+        </div>
 
     </div>
 
